@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.switch-bar-container{
+    width: 140px;
+    height: 40px;
+    background-color: rgb(185, 185, 185);
+    border-radius: 100vw;
+    padding-inline: 0.4rem;
+    box-shadow: 0 1px 4px black;
+
+    display: flex;
+    align-items: center;
+}
+
+.inner-switch-circle{
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    transition: position 4s ease-in-out;
+    box-shadow: 0 1px 4px black;
+}
+
+.switch-bar-container.active{
+    background-color: rgb(27, 115, 27);
+    position: relative;
+}
+
+.switch-bar-container.active .inner-switch-circle {
+
+    right: 5px;
+}
